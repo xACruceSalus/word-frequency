@@ -35,9 +35,13 @@ After completing this assignment, you should be able to:
 
 ## Normal Mode
 
-Your program should open `sample.txt` and read in the entirety of its text. You'll need to normalize the text so that words in different cases are still the same word and so it's scrubbed of punctuation. Once you've done that, go through the text and find the number of times each word is used.
+Your program should open `sample.txt` and read in the entirety of its text.
+You'll need to normalize the text so that words in different cases are still
+the same word and so it's scrubbed of punctuation. Once you've done that, go
+through the text and find the number of times each word is used.
 
-After that, find the top 20 words used and output them to the console in reverse order, along with their frequency, like this:
+After that, find the top 20 words used and output them to the console in
+reverse order, along with their frequency, like this:
 
 ```
 peanut 33
@@ -55,9 +59,11 @@ the 9
 
 In addition to the requirements from **Normal Mode**:
 
-1. Change your program so that you have to give it the name of the file to read on the command line, like so: `python word_frequency.py sample.txt`.
+1. Change your program so that you have to give it the name of the file to read
+on the command line, like so: `python word_frequency.py sample.txt`.
 
-2. Output the words to the console in a simple text-based histogram format, like so:
+2. Output the words to the console in a simple text-based histogram format,
+like so:
 
 ```
 peanut    #################################
@@ -70,6 +76,12 @@ algorithm ##########
 the       #########
 ...
 ```
+
+3. Normalize the histogram so that you never have more than 50 `#` marks.
+You'll have to scale all the lines by some divisor if you have more than 50 of
+one word. It is ok to round down decimals with this. For example, if you have
+the word "the" 75 times and the word "and" 47 times, you'd have 50 `#` for
+"the" and 31 `#` for "and".
 
 ## Additional Resources
 
